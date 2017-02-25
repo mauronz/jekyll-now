@@ -4,12 +4,6 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+What about me? I'm a computer engineer with a great interest in IT sec. Ranging from exploit development to malware analysis, I always look for something new to tease my curiosity.
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+Main programming languages: C, Java, Python, assembly (x32/x64)
