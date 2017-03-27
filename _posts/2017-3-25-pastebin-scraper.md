@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Need a malware? No problem, I'll copy it on pastebin
+title: Need a malware? No problem, I'll put it on pastebin
 ---
 
 We can find many different means for malwares to spread: just to name a couple, the evergreen of email spam, with that nasty _invoice.pdf.exe_ attachment, or some Viagra malvertising leading to an Exploit Kit.  But malware authors also look for more "unusual" ways to move around their products. A very interesting one is [pastebin](http://pastebin.com/), the well-known service to quickly distribute chunks of text online. The idea of monitoring pastebin comes from [sudosev](https://twitter.com/sudosev), who proposed to look for Base64 encodings of Windows executables (i.e. PE files) among the content that goes through pastebin. To achieve this goal he used used [pastemonitor](https://www.pastemonitor.com): the name is self-explanatory, this service stores pastes and allows the user to look for specific strings or regular expressions. sev perfomed the analysis manually, so I decided to take his very good idea and automatize it.
