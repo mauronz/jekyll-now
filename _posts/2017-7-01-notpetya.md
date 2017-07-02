@@ -68,7 +68,7 @@ Got that right! I then loaded the binary dump in IDA
 ![MBR signature]({{ site.baseurl }}/images/2017-07-01-notpetya/mbr_ida.png)
 
 Basically what this code does is to read 32 sectors, starting from the second one (sector number 1), load it at the address 0:0x8000 and finally jump to it.
-This part is substantially identical to the old Petya, as showed by hasherazade. The only difference is the starting sector, which was the 34.
+This layout is identical in the previous Petya version, Goldeneye, as shown by hasherezade.
 
 As there wasn't much else to see here I moved to the newly loaded code.
 
