@@ -3,13 +3,15 @@ layout: post
 title: "API call inspection with APIhooklib"
 ---
 
-[Github repository](https://github.com/mauronz/APIhookerlib/)
 
 Windows API hooks are among the best friends of infosec people. For example, bad guys use them for stealing information or hiding their files/processes; on the other hand they are found in security tools to detect malicious behaviors. 
 
-There is a number of tools and frameworks for this job, with different features and scopes. I would like to cite two of them: [APIMonitor](http://www.rohitab.com/apimonitor)  is extremely useful to get both the input and the output of an API call, but lacks the possibility of setting custom hooks. [Pin](https://software.intel.com/en-us/articles/pin-a-dynamic-binary-instrumentation-tool), the Intel dynamic binary instrumentation framework, is powerful, as it allows to perform analysis at a very low level, even for each instruction that is executed. Unfortunately this power comes at the price of performances, as Pin instroduces a considerable overhead in the execution. Moreover, as personal critic, developing  programs that use Pin (aka Pin Tools) is not exactly straightforward. 
+There is a number of tools and frameworks for this job, with different features and scopes. I would like to cite two of them: [APIMonitor](http://www.rohitab.com/apimonitor)  is extremely useful to get both the input and the output of an API call, but lacks the possibility of setting custom hooks. [Pin](https://software.intel.com/en-us/articles/pin-a-dynamic-binary-instrumentation-tool), the Intel dynamic binary instrumentation framework, is powerful, as it allows to perform analysis at a very low level, even for each instruction that is executed. Unfortunately this power comes at the price of performances, as Pin instroduces a considerable overhead in the execution. Moreover, as a personal critic, developing  programs that use Pin (aka Pin Tools) is not exactly straightforward. 
 
 My goal for APIhooklib was to have an instrument that stands in between these two, which means custom hooks, low overhead and simple development.  
+
+[Github repository](https://github.com/mauronz/APIhookerlib/)
+{: style="text-align: center;"}
 
 ## Features
 
