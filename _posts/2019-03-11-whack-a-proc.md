@@ -5,6 +5,9 @@ title: "whack-a-proc: catch hidden executables as they are injected"
 
 Nowadays it is fairly common for malware authors to use some form of process injection. The real malicious PE file (dll or exe) is hidden beneath one or more layers of wrappers which try to execute it as stealthly as possible, for example by injecting it in a seemingly harmless process. There is a wide variety of techniques to achieve process injection (check out this nice [summary](https://www.endgame.com/blog/technical-blog/ten-process-injection-techniques-technical-survey-common-and-trending-process)). For malware analysts the external layers of protection are just a nuance, and the most interesting code is in the final executable that is injected, so getting to it as quickly as possible is a primary goal. That is why I wanted to automatize as much as possible the extraction procedure, for which I built a tool called **whack-a-proc**.
 
+<br />
+<br />
+
 ## whack-a-proc
 
 The idea behind *whack-a-proc* is fairly simple: we let the external layer decrypt/unpack its payload and inject it in a target process, and then just before its execution, we dump it from the process memory. This is actually one of the most common approaches used during manual analysis.  
