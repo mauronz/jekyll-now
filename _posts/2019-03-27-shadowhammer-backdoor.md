@@ -66,7 +66,7 @@ Using the WININET APIs, the shellcode of the second stage is downloaded and save
 
 #### Not a target
 
-If instead, the current machine is not a target, the shellcode performs one final action. It creates a file named *idx.ini* in the folder of the current user, where stores a date a week after the current one. The purpose of this file is unclear.  
+If instead the current machine is not a target, the shellcode performs one final action. It creates a file named *idx.ini* in the folder of the current user, where it stores a date a week after the current one. The purpose of this file is unclear.  
 
 {: .center}
 ![VM directory]({{ site.baseurl }}/images/2019-03-27-shadowhammer-backdoor/idx.jpg)
