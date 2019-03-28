@@ -67,6 +67,10 @@ Using the WININET APIs, the shellcode of the second stage is downloaded and save
 #### Not a target
 
 If instead, the current machine is not a target, the shellcode performs one final action. It creates a file named *idx.ini* in the folder of the current user, where stores a date a week after the current one. The purpose of this file is unclear.  
+
+{: .center}
+![VM directory]({{ site.baseurl }}/images/2019-03-27-shadowhammer-backdoor/idx.jpg)
+
 At least for this sample, the backdoor does not perform any malicious activity on machines that are not targeted. There is no form of persistence, so the people behind ShadowHammer cannot reobtain execution unless the *setup.exe* file is run again by a user.
 
 ### List of target data
