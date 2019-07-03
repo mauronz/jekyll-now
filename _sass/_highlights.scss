@@ -1,13 +1,17 @@
 
 div.highlight {
-  background-color: #f5f7ff;
+  background-color: $codeBg;
   padding: 7px 7px 7px 20px;
   margin: 20px 0 20px 0;
   overflow-x: auto;
 }
 
 code {
+  padding: 2px 4px;
   font-family:'Bitstream Vera Sans Mono','Courier', monospace;
+  font-size: 0.9rem;
+  background-color: $codeBg;
+  border-radius: 0.3rem;
 }
 
 .highlight .c { color: #586E75 } /* Comment */
