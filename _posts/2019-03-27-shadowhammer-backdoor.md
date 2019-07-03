@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Analysis of the ShadowHammer backdoor
-description: ""
 ---
 
 On March 25, Kim Zetter published an [astonishing story](https://motherboard.vice.com/en_us/article/pan9wn/hackers-hijacked-asus-software-updates-to-install-backdoors-on-thousands-of-computers) describing a supply-chain attack against ASUS which was run between June and November 2018. The ASUS Live Update software was backdoored in order to attack a very specific group of targets. The campaign, named ShadowHammer, was discovered and investigated by [Kaspersky Lab](https://securelist.com/operation-shadowhammer/89992/?utm_source=twitter&utm_medium=social&utm_campaign=uk_securelist_db0077_organic&utm_content=sm-post&utm_term=uk_twitter_organic_db0077_sm-post_social_securelist), which will present the full details during SAS2019. 
