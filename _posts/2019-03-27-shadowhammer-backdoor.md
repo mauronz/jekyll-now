@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Analysis of the ShadowHammer backdoor"
 ---
 
