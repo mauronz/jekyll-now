@@ -4,6 +4,7 @@ title: "Write-up: solution to a RE crackme"
 ---
 
 CTFs and challenges mainly based on reverse engineering are a bit uncommon, so when I find one I am always happy to devote some time to try and solve it. This write-up will be on the [crackme](https://www.hybrid-analysis.com/sample/4ba96615dd4f38d5bf75c192c6bee81ecac595fda911d6974739557118eda032?environmentId=100) created by [hasherezade](https://twitter.com/hasherezade). To make the reading more spicy I decided to explain my thought process while going through the challenge, instead of writing a plain (boring) solution.
+<!--more-->
 
 {: .center}
 ![VM directory]({{ site.baseurl }}/images/2017-10-22-mb-crackme/crackme.jpg)

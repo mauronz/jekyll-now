@@ -4,6 +4,7 @@ title: When monkeys create ransomwares
 ---
 
 2016 has been a year full of ransomwares, and the trend doesn't seem to change in the new year. Many "sophisticated" pieces of malware have been developed, from Locky, to Cerber, to the more recent Spora. But in the wild sometimes strange examples of wannabe-ransomware can appear, as the one we will look at here. Actually I'm writing this post just to make some fun of this script-kiddie masterpiece, so do not expect any obscure technique or advanced feature presented here.
+<!--more-->
 
 Sample: [Virustotal scan](https://virustotal.com/en/file/f29a0a45628b018fd1135eeb7690f49c535a865b891b19deaeebf782d75c9532/analysis/)
 

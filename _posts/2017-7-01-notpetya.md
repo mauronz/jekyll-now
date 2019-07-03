@@ -5,6 +5,7 @@ title: Getting your hands on the "micro kernel" of NotPetya
 
 As everyone in the infosec community, I wanted to get my hands on the latest malware case, the infamous NotPetya, EternalPetya, WhateveryouwantPetya.
 Let me start with a disclamer: I am completely out the naming debate, but for the sake of my mental health I will call it NotPetya from now on.
+<!--more-->
 There are already a lot of in-depth technical analysis of this malware, so I do not want to waste time writing down things that you can find elsewhere.
 As an example I'll leave here the links to a couple of interesting reads on the topic:
 

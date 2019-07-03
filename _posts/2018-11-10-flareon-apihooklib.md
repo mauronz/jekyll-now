@@ -4,6 +4,7 @@ title: "A hook to rule them all: Flare-On 5 - challenge 9"
 ---
 
 Flare-On is one of the most challenging CTFs of the year when it comes to reverse engineering. In this post I will present an approach to solve level 9 based on hooking program functions with the aid of my library [APIhooklib](https://github.com/mauronz/APIhooklib){:target="_blank"}. This will not be a complete solution, the focus will be on the decryption of the VB script, which I consider the hardest part to tackle in this challenge. For a full walkthrough I recommend the one posted by the Flare team itself ([link](https://www.fireeye.com/content/dam/fireeye-www/blog/pdfs/2018_flareon_writeup_mykill_leet_editr.pdf){:target="_blank"}).
+<!--more-->
 
 ## The challenge
 

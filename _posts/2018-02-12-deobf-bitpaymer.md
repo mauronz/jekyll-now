@@ -4,6 +4,7 @@ title: "Deobfuscation of Bitpaymer API calls"
 ---
 
 In the plethora of bad ransomware that infests the internet these days, sometimes a "gem" stands out. This is the case of Bitpaymer. It targets companies, with ad-hoc samples for each victim, and it requires ransoms way above the average "spray-and-pray" ransomware. To attack such high-profile targets, it uses a set of features that you rarely find in ransomware: the use of ADSs, multiple layers of encryption and packing, and an elaborated system to hide calls to the Windows API. The focus of this post is the latter.
+<!--more-->
 
 I had the chance to work on the first samples that appeared in the wild in July 2017 (thanks to [demonslay335](https://twitter.com/demonslay335)). Back then I stopped after unpacking the malware, as the obfuscation of API calls was quite daunting, and in the end, to determined how it encrypted the files of victims it was not strictly necessary to defeat it. Lately a [new report](https://www.welivesecurity.com/2018/01/26/friedex-bitpaymer-ransomware-work-dridex-authors/) has come up, with the attribution of Bitpaymer to the group behind Dridex. That reminded me of how the analysis remained incomplete, so here is how I completed the deobfuscation of API calls.
 
