@@ -13,7 +13,8 @@ NOTE: as of yet Kaspersky has only published a single sample of the backdoor (ha
 The ASUS software is distributed as a zip archive containing 3 files, *setup.exe* and two versions of *409.msi*. The backdoor resides in the first one.
 The malicious code is executed just before the program exits.
 
-![VM directory]({{ site.baseurl }}/images/2019-03-27-shadowhammer-backdoor/call_backdoor.jpg){: .center-image }
+{: .center}
+![VM directory]({{ site.baseurl }}/images/2019-03-27-shadowhammer-backdoor/call_backdoor.jpg)
 
 The call to **execute_backdoor** overwrites a call to a legitimate function just before the execution of ExitProcess.
 
