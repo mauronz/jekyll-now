@@ -124,7 +124,7 @@ With a gadget of the form
 {: .center}
 
 where X >= 0x18, we obtain the control of the execution flow with a completely arbitrary stack frame. ucrtbase.dll has many of these gadgets, so we use one with X = 0x18. To start our exploit we use the same technique of Flag 3, but this time we replace the vtable entry of *ChatClient::SendMsg* with the address of the gadget.  
-But how do we find the gadget in memory? We want to play hardcore so let us assume we do not know any DLL version, so we cannot use hardcoded offsets. First, we need to find where ucrtbase.dll is mapped. userafterfree.exe imports many functions from it, for example `free` (RVA 0x50B8). We read the value of the import table entry and then read backwards until we find the "MZ" of the DOS header, marking the beginning of the DLL. From there, we skip the first 0x1000 bytes to reach the code section and then we simply read chunks of memory until we find the gadget `"\x83\xc4\x18\xc3"`.
+But how do we find the gadget in memory? We want to play hardcore so let us assume we do not know any DLL version, so we cannot use hardcoded offsets. First, we need to find where ucrtbase.dll is mapped. userafterfree.exe imports many functions from it, for example *free* (RVA 0x50B8). We read the value of the import table entry and then read backwards until we find the "MZ" of the DOS header, marking the beginning of the DLL. From there, we skip the first 0x1000 bytes to reach the code section and then we simply read chunks of memory until we find the gadget `"\x83\xc4\x18\xc3"`.
 
 ### ROP
 
